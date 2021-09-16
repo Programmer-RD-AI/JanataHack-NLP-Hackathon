@@ -1,0 +1,38 @@
+
+  0%|                                                  | 0/1000 [00:00<?, ?it/s]wandb: ERROR Dropped streaming file chunk (see wandb/debug-internal.log)
+ERROR:root:dropped chunk 404 Client Error: Not Found for url: https://api.wandb.ai/files/ranuga-d/JanataHack-NLP-Hackathon/20zmzt4y/file_stream
+NoneType: None
+  0%|                                        | 1/1000 [00:04<1:20:59,  4.86s/it]Exception in thread Thread-11:
+Traceback (most recent call last):
+  File "/home/indika/anaconda3/lib/python3.7/site-packages/wandb/apis/normalize.py", line 24, in wrapper
+    return func(*args, **kwargs)
+  File "/home/indika/anaconda3/lib/python3.7/site-packages/wandb/sdk/internal/internal_api.py", line 1203, in upload_urls
+    "Run does not exist {}/{}/{}.".format(entity, project, run_id)
+wandb.errors.CommError: Run does not exist ranuga-d/JanataHack-NLP-Hackathon/20zmzt4y.
+During handling of the above exception, another exception occurred:
+Traceback (most recent call last):
+  File "/home/indika/anaconda3/lib/python3.7/threading.py", line 926, in _bootstrap_inner
+    self.run()
+  File "/home/indika/anaconda3/lib/python3.7/site-packages/wandb/filesync/upload_job.py", line 56, in run
+    success = self.push()
+  File "/home/indika/anaconda3/lib/python3.7/site-packages/wandb/filesync/upload_job.py", line 112, in push
+    _, upload_headers, result = self._api.upload_urls(project, [self.save_name])
+  File "/home/indika/anaconda3/lib/python3.7/site-packages/wandb/apis/normalize.py", line 62, in wrapper
+    six.reraise(CommError, CommError(message, err), sys.exc_info()[2])
+  File "/home/indika/anaconda3/lib/python3.7/site-packages/six.py", line 718, in reraise
+    raise value.with_traceback(tb)
+  File "/home/indika/anaconda3/lib/python3.7/site-packages/wandb/apis/normalize.py", line 24, in wrapper
+    return func(*args, **kwargs)
+  File "/home/indika/anaconda3/lib/python3.7/site-packages/wandb/sdk/internal/internal_api.py", line 1203, in upload_urls
+    "Run does not exist {}/{}/{}.".format(entity, project, run_id)
+wandb.errors.CommError: Run does not exist ranuga-d/JanataHack-NLP-Hackathon/20zmzt4y.
+wandb: ERROR Dropped streaming file chunk (see wandb/debug-internal.log)
+ERROR:root:dropped chunk 404 Client Error: Not Found for url: https://api.wandb.ai/files/ranuga-d/JanataHack-NLP-Hackathon/20zmzt4y/file_stream
+NoneType: None
+wandb: ERROR Dropped streaming file chunk (see wandb/debug-internal.log)
+ERROR:root:dropped chunk 404 Client Error: Not Found for url: https://api.wandb.ai/files/ranuga-d/JanataHack-NLP-Hackathon/20zmzt4y/file_stream
+NoneType: None
+  0%|                                        | 2/1000 [00:09<1:20:08,  4.82s/it]wandb: ERROR Dropped streaming file chunk (see wandb/debug-internal.log)
+ERROR:root:dropped chunk 404 Client Error: Not Found for url: https://api.wandb.ai/files/ranuga-d/JanataHack-NLP-Hackathon/20zmzt4y/file_stream
+NoneType: None
+  0%|                                        | 2/1000 [00:10<1:30:25,  5.44s/it]
